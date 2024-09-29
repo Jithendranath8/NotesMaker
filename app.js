@@ -10,8 +10,11 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+
 app.use('/api/workspaces', workspaceRoutes);
+
 app.use('/api/notes', noteRoutes);         
-app.use('/api/folders', folderRoutes);     
+app.use('/api/folders', folderRoutes);    
+ 
 
 module.exports = app;
